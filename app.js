@@ -4,6 +4,7 @@ const port = 3000;
 
 
 const isNumberPrime = (n) =>{
+    n = Math.abs(n);
     if (n < 2)
         return false
     for (let i = 2 ; i <= Math.sqrt(n) ; i++){
